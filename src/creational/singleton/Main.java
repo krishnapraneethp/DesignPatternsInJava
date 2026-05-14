@@ -1,6 +1,4 @@
-package creational;
-
-import creational.singleton.Singleton;
+package creational.singleton;
 
 public class Main {
     public static void main(String[] args) {
