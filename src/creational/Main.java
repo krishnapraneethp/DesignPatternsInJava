@@ -1,7 +1,13 @@
 package creational;
 
+import creational.singleton.Singleton;
+
 public class Main {
     public static void main(String[] args) {
-        // code here
+        Singleton singleton1 = Singleton.getInstance();
+        Singleton singleton2 = Singleton.getInstance();
+        if(singleton1.hashCode() == singleton2.hashCode()) {
+            System.out.println("Singleton pattern implemented successfully");
+        }
     }
 }
